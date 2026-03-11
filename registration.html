@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B2B Inventory System - Login</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #2c7be5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #1a68d1;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>User Login</h2>
+
+<form id="loginForm">
+
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Enter your email" required>
+
+<label for="role">Select Role</label>
+<select id="role" required>
+<option value="">-- Select Role --</option>
+<option value="wholesaler">Wholesaler</option>
+<option value="retailer">Retailer</option>
+<option value="manufacturer">Manufacturer</option>
+<option value="distributor">Distributor</option>
+<option value="smallbusiness">Small Business Owner</option>
+</select>
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const role = document.getElementById("role").value;
+
+    if(role === "retailer"){
+        window.location.href = "retailer-dashboard.html";
+    }
+    else{
+        window.location.href = "wholesaler-dashboard.html";
+    }
+
+});
+
+</script>
+
+</body>
+</html>
