@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Connect - Inventory & Billing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        .landing-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 4rem 10%;
+            background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.1), transparent);
+        }
+        .hero-content {
+            max-width: 800px;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--color-text-muted);
+            margin-bottom: 3rem;
+        }
+        .header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--color-border);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="landing-page bg-slate-50">
+    
+    <header class="header" style="background-color: var(--color-info-bg); color: var(--color-text-main); padding: 0.75rem 0; width: 100%; border-bottom: 1px solid var(--color-info);">
+        <div style="max-width: 1200px; margin: 0 auto; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem;">
+            <!-- Left Side: Logo & Nav Links -->
+            <div class="flex items-center" style="gap: 3rem;">
+                <div class="flex items-center gap-2">
+                    <i class="ph-fill ph-infinity text-3xl" style="color: var(--color-primary);"></i>
+                    <span class="text-xl font-bold" style="color: var(--color-primary);">B2B Connect</span>
+                </div>
+                <nav class="flex items-center text-sm font-medium" style="gap: 1.5rem;">
+                    <a href="#" style="background-color: var(--color-secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: opacity 0.2s; text-decoration: none;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Home</a>
+                    <a href="#" style="background-color: var(--color-secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: opacity 0.2s; text-decoration: none;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Products</a>
+                    <a href="#" style="background-color: var(--color-secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: opacity 0.2s; text-decoration: none;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Suppliers</a>
+                    <a href="#" style="background-color: var(--color-secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: opacity 0.2s; text-decoration: none;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Pricing</a>
+                </nav>
+            </div>
+            <!-- Right Side: Auth Buttons -->
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="btn btn-secondary" style="background-color: transparent; border: 2px solid var(--color-primary); color: var(--color-primary);">Log In</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">The Modern Operating System for Wholesale Commerce</h1>
+            <p class="hero-subtitle">Streamline your inventory, connect with retailers instantly, and drive sales through data-powered intelligent insights.</p>
+            
+            <div class="flex items-center justify-start mt-8">
+                <a href="register.html" class="btn btn-primary text-lg" style="padding: 1rem 3rem; border-radius: 9999px; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);">
+                    Start Your Free Trial <i class="ph ph-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-8 mt-16 text-left">
+                <div class="card bg-white">
+                    <i class="ph-fill ph-buildings text-3xl text-primary mb-4"></i>
+                    <h3 class="font-bold mb-2">For Wholesalers</h3>
+                    <p class="text-sm text-muted">Manage products, approve orders, and scale your business with powerful analytics.</p>
+                </div>
+                <div class="card bg-white">
+                    <i class="ph-fill ph-storefront text-3xl text-success mb-4"></i>
+                    <h3 class="font-bold mb-2">For Retailers</h3>
+                    <p class="text-sm text-muted">Browse massive catalogs, find trending hits, and restock with one-click checkout.</p>
+                </div>
+                <div class="card bg-white">
+                    <i class="ph-fill ph-magic-wand text-3xl text-warning mb-4"></i>
+                    <h3 class="font-bold mb-2">AI Insights</h3>
+                    <p class="text-sm text-muted">Discover the fastest moving inventory and predict stock-outs before they happen.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #1e293b; color: #f8fafc; padding: 4rem 2rem 2rem 2rem; margin-top: auto;">
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="ph-fill ph-infinity text-2xl text-primary"></i>
+                    <span class="text-lg font-bold">B2B Connect</span>
+                </div>
+                <p class="text-sm" style="color: #94a3b8; line-height: 1.6;">
+                    Building the future of wholesale commerce. Streamline your inventory and discover new retail opportunities.
+                </p>
+                <!-- Social Media Icons -->
+                <div class="flex gap-4 mt-6">
+                    <a href="#" style="color: #cbd5e1; font-size: 1.5rem;" class="hover:text-primary transition-colors"><i class="ph-fill ph-twitter-logo"></i></a>
+                    <a href="#" style="color: #cbd5e1; font-size: 1.5rem;" class="hover:text-primary transition-colors"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="#" style="color: #cbd5e1; font-size: 1.5rem;" class="hover:text-primary transition-colors"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="#" style="color: #cbd5e1; font-size: 1.5rem;" class="hover:text-primary transition-colors"><i class="ph-fill ph-facebook-logo"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-4">Company</h4>
+                <ul class="flex flex-col gap-2 text-sm" style="color: #94a3b8;">
+                    <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-4">Support</h4>
+                <ul class="flex flex-col gap-2 text-sm" style="color: #94a3b8;">
+                    <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">System Status</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-4">Legal</h4>
+                <ul class="flex flex-col gap-2 text-sm" style="color: #94a3b8;">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="max-width: 1200px; margin: 2rem auto 0 auto; padding-top: 2rem; border-top: 1px solid #334155; text-align: center; color: #64748b; font-size: 0.875rem;">
+            &copy; 2024 B2B Connect. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Connect - Inventory & Billing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        .landing-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 4rem 10%;
+            background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.1), transparent);
+        }
+        .hero-content {
+            max-width: 800px;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--color-text-muted);
+            margin-bottom: 3rem;
+        }
+        .header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--color-border);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="landing-page bg-slate-50">
+    
+    <header class="header" style="background-color: var(--color-info-bg); color: var(--color-text-main); padding: 0.75rem 0; width: 100%; border-bottom: 1px solid var(--color-info);">
+        <div style="max-width: 1200px; margin: 0 auto; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem;">
+            <!-- Left Side: Logo & Nav Links -->
+            <div class="flex items-center" style="gap: 3rem;">
+                <div class="flex items-center gap-2">
+                    <i class="ph-fill ph-infinity text-3xl" style="color: var(--color-primary);"></i>
+                    <span class="text-xl font-bold" style="color: var(--color-primary);">B2B Connect</span>
+                </div>
+                <nav class="flex items-center text-sm font-medium" style="gap: 1.5rem;">
+                    <a href="#" style="background-color: var(--color-secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: opacity 0.2s; text-decoration: none;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Home</a>
+                    <a href="#" style="background-color: var(--color-secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: opacity 0.2s; text-decoration: none;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Products</a>
+                    <a href="#" style="background-color: var(--color-secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: opacity 0.2s; text-decoration: none;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Suppliers</a>
+                    <a href="#" style="background-color: var(--color-secondary); color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: opacity 0.2s; text-decoration: none;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Pricing</a>
+                </nav>
+            </div>
+            <!-- Right Side: Auth Buttons -->
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="btn btn-secondary" style="background-color: transparent; border: 2px solid var(--color-primary); color: var(--color-primary);">Log In</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">The Modern Operating System for Wholesale Commerce</h1>
+            <p class="hero-subtitle">Streamline your inventory, connect with retailers instantly, and drive sales through data-powered intelligent insights.</p>
+            
+            <div class="flex items-center justify-start mt-8">
+                <a href="register.html" class="btn btn-primary text-lg" style="padding: 1rem 3rem; border-radius: 9999px; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);">
+                    Start Your Free Trial <i class="ph ph-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-8 mt-16 text-left">
+                <div class="card bg-white">
+                    <i class="ph-fill ph-buildings text-3xl text-primary mb-4"></i>
+                    <h3 class="font-bold mb-2">For Wholesalers</h3>
+                    <p class="text-sm text-muted">Manage products, approve orders, and scale your business with powerful analytics.</p>
+                </div>
+                <div class="card bg-white">
+                    <i class="ph-fill ph-storefront text-3xl text-success mb-4"></i>
+                    <h3 class="font-bold mb-2">For Retailers</h3>
+                    <p class="text-sm text-muted">Browse massive catalogs, find trending hits, and restock with one-click checkout.</p>
+                </div>
+                <div class="card bg-white">
+                    <i class="ph-fill ph-magic-wand text-3xl text-warning mb-4"></i>
+                    <h3 class="font-bold mb-2">AI Insights</h3>
+                    <p class="text-sm text-muted">Discover the fastest moving inventory and predict stock-outs before they happen.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #1e293b; color: #f8fafc; padding: 4rem 2rem 2rem 2rem; margin-top: auto;">
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="ph-fill ph-infinity text-2xl text-primary"></i>
+                    <span class="text-lg font-bold">B2B Connect</span>
+                </div>
+                <p class="text-sm" style="color: #94a3b8; line-height: 1.6;">
+                    Building the future of wholesale commerce. Streamline your inventory and discover new retail opportunities.
+                </p>
+                <!-- Social Media Icons -->
+                <div class="flex gap-4 mt-6">
+                    <a href="#" style="color: #cbd5e1; font-size: 1.5rem;" class="hover:text-primary transition-colors"><i class="ph-fill ph-twitter-logo"></i></a>
+                    <a href="#" style="color: #cbd5e1; font-size: 1.5rem;" class="hover:text-primary transition-colors"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="#" style="color: #cbd5e1; font-size: 1.5rem;" class="hover:text-primary transition-colors"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="#" style="color: #cbd5e1; font-size: 1.5rem;" class="hover:text-primary transition-colors"><i class="ph-fill ph-facebook-logo"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-4">Company</h4>
+                <ul class="flex flex-col gap-2 text-sm" style="color: #94a3b8;">
+                    <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-4">Support</h4>
+                <ul class="flex flex-col gap-2 text-sm" style="color: #94a3b8;">
+                    <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">System Status</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-4">Legal</h4>
+                <ul class="flex flex-col gap-2 text-sm" style="color: #94a3b8;">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="max-width: 1200px; margin: 2rem auto 0 auto; padding-top: 2rem; border-top: 1px solid #334155; text-align: center; color: #64748b; font-size: 0.875rem;">
+            &copy; 2024 B2B Connect. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
